@@ -1,3 +1,7 @@
+:root {
+  --primary: #4857ad;
+}
+
 /* Body
 -----------------------------------------------*/
 html,  body{
@@ -10,7 +14,7 @@ html{
   scroll-behavior: smooth;
 }
 body, p, select, textarea{
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
 img{
   max-width: 100%;
@@ -35,6 +39,9 @@ body, h1, h2, h3, h4, h5, h6, input, select, textarea {
 }
 /* Global Styles
 ----------------------------------------------------*/
+.effect-title{
+  color: var(--primary);
+}
 .section{
   padding: 8%;
   border-bottom: 1px solid #f1f1f1;
@@ -76,7 +83,7 @@ body, h1, h2, h3, h4, h5, h6, input, select, textarea {
   margin-bottom: 5px;
 }
 .list-inline-item .fa{
-  color: #33ccff;
+  color: var(--primary);
   margin-right: 7px;
 }
 .form-field{
@@ -96,8 +103,14 @@ body, h1, h2, h3, h4, h5, h6, input, select, textarea {
   font-weight: bold;
 }
 .btn-primary{
-  background-color: #33ccff;
+  background-color: var(--primary);
   color: #fff;
+}
+.btn-primary:hover{
+  color: var(--primary);
+  background-color: #fff;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
 }
 .feature-item{
   padding: 20px;
@@ -112,7 +125,7 @@ body, h1, h2, h3, h4, h5, h6, input, select, textarea {
 }
 .feature-icon{
   font-size: 2rem;
-  background: #33ccff;
+  background: var(--primary);
   color: #fff;
   padding: 1em;
   border-radius: 100%;
@@ -153,7 +166,7 @@ body, h1, h2, h3, h4, h5, h6, input, select, textarea {
 }
 .brand a {
   text-decoration: none;
-  color: #333;
+  color: var(--primary);
   margin-left: -50%;
 }
 @media (max-width: 768px) {
@@ -198,8 +211,8 @@ body, h1, h2, h3, h4, h5, h6, input, select, textarea {
   margin-left: -5%;
   width: 100%;
   padding: 5%;
-  color: #33ccff;
-  font-family: "Yellowtail", cursive, sans-serif;
+  color: var(--primary);
+  font-family: 'Staatliches', cursive;
 }
 #about .lead{
   font-size: 1.35rem;
@@ -226,7 +239,7 @@ body, h1, h2, h3, h4, h5, h6, input, select, textarea {
 #mission{
   background: url('../images/candle.jpg');
   background-size: cover;
-  background-color: #33ccff;
+  background-color: var(--primary);
   background-attachment: fixed;
   background-blend-mode: multiply;
   color: #fff;
@@ -281,8 +294,8 @@ body, h1, h2, h3, h4, h5, h6, input, select, textarea {
   font-size: 3rem;
   margin: 0;
   line-height: 1;
-  font-family: "Yellowtail", cursive, sans-serif;
-  color: #33ccff;
+  font-family: 'Staatliches', cursive;
+  color: var(--primary);
   margin-bottom: 1em;
   padding-top: 1rem;
   margin-top: 5rem;
@@ -385,8 +398,8 @@ body, h1, h2, h3, h4, h5, h6, input, select, textarea {
   border-bottom: 1px dotted #444;
 }
 #contact .section-title{
-  font-family: "Yellowtail", cursive, sans-serif;
-  color: #33ccff;
+  font-family: 'Staatliches', cursive;
+  color: var(--primary);
   padding-top: 3%;
 }
 #contact .lead, #mail{

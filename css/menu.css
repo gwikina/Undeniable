@@ -1,3 +1,6 @@
+:root {
+    --primary: #4857ad;
+  }
 /* Nav
 ----------------------------------------------------------------------------- */
 .menu-toggle {
@@ -11,6 +14,7 @@
 
 .menu-toggle .fa {
     display: block;
+    color: var(--primary);
     line-height: 0;
     margin: 0 0 8px 0;
     font-size: 28px;
@@ -18,8 +22,8 @@
 }
 
 .menu-nav-item:hover{
-    background-color: #f2f2f2;
-    padding: .25em;
+    transform: translate(50px);
+    transition: all ease-in-out 0.3s;
 }
 
 .menu-toggle.close .fa {
@@ -69,7 +73,7 @@
     padding: 7px 0 8px 0;
     text-decoration: none;
     font-size: 28px;
-    color: #00ace6;
+    color: var(--primary);
 }
 
 @media (max-width: 1200px) {
